@@ -17,7 +17,7 @@
           fetch="https://github.com/LineageOS" />
 
   <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="azure" revision="xdroid-12.x" />
+        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="xcode" revision="xdroid-12.x" />
         <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="xcode" revision="twelve" />
         <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="xcode" revision="twelve" />
 
