@@ -27,11 +27,7 @@
   <!-- Extra -->
        <remove-project name="AOSPA/android_vendor_aospa"/>
        <project path="vendor/aospa" name="android_vendor_aospa" remote="xcode" revision="sapphire"/>
-       <remove-project name="AOSPA/android_art"/>
-       <project path="art" name="android_art" remote="pavayu" revision="sapphire"/>
-       <remove-project name="AOSPA/android_bionic"/>
-       <project path="bionic" name="android_bionic" remote="pavayu" revision="sapphire"/>
-       <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azure" revision="sapphire"/>
+       <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azure" revision="ruby"/>
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-18.1"/>
   <!-- HALs Replacement -->	
   
