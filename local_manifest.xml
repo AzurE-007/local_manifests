@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote name="azure"
-          fetch="https://github.com/AzurE-007"/>
-          
-  <remote name="pavayu"
-          fetch="https://github.com/orgs/pa-vayu"/>
+          fetch="https://github.com/AzurE-007" />
   
   <remote name="xcode"
-          fetch="https://github.com/XCode219"/>
-
+          fetch="https://github.com/XCode219" />
   <remote name="extrasas"
-          fetch="https://github.com/ArrowOS"/>
-
+          fetch="https://github.com/ArrowOS" />
   <remote name="extrasad"
-          fetch="https://github.com/ArrowOS-Devices"/>
+          fetch="https://github.com/ArrowOS-Devices" />
   
   <remote name="extrasls"
-          fetch="https://github.com/LineageOS"/>
-
+          fetch="https://github.com/LineageOS" />
   <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael-2" remote="azure" revision="sapphire"/>
-        <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azure" revision="ruby"/>
-        <project path="kernel/msm-4.14" name="kernel_xiaomi_raphael" remote="azure" revision="ruby"/>
-
+        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="xcode" revision="xdroid-12.x" />
+        <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="xcode" revision="twelve" />
+        <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="xcode" revision="twelve" />
   <!-- Extra -->
-       <remove-project name="AOSPA/android_vendor_aospa"/>
-       <project path="vendor/aospa" name="android_vendor_aospa" remote="xcode" revision="sapphire"/>
-       <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr"/>
-       <project path="device/qcom/sepolicy/vndr" name="android_device_qcom_sepolicy_vndr" remote="azure" revision="sapphire"/>
-       <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azure" revision="ruby"/>
-       <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-18.1"/>
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="extrasad" revision="arrow-12.0" />
+        <project path="device/xiaomi/extras" name="android_device_xiaomi_extras" remote="extrasad" revision="arrow-12.0" />
+        <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="extrasad" revision="arrow-12.0" />
+        <remove-project name="android_packages_resources_devicesettings"/>
+        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.0" />
+
   <!-- HALs Replacement -->	
-  
 </manifest>
