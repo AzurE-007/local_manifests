@@ -11,7 +11,7 @@
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
   <remote name="extrasex"
-          fetch=https://github.com/Evolution-X" />
+          fetch="https://github.com/Evolution-X" />
   <!-- Trees -->
         <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="xcode" revision="xdroid-wip" />
         <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="xcode" revision="xdroid-wip" />
