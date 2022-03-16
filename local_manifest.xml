@@ -21,11 +21,11 @@
         <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="extrasad" revision="arrow-12.0" />
         <remove-project name="android_packages_resources_devicesettings"/>
         <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
-        <remove-project name="vendor/qcom/opensource/commonsys/bluetooth_ext"/>
+        <remove-project name="android_vendor_qcom_opensource_bluetooth_ext"/>
         <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="extrasex" revision="snow" />
-        <remove-project name="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth"/>
+        <remove-project name="android_vendor_qcom_opensource_packages_apps_Bluetooth"/>
         <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="extrasex" revision="snow" />
-        <remove-project name="vendor/qcom/opensource/commonsys-intf/bluetooth"/>
+        <remove-project name="android_vendor_qcom_opensource_bluetooth-commonsys-intf"/>
         <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" remote="extrasex" revision="snow" />
   <!-- HALs Replacement -->
 </manifest>
