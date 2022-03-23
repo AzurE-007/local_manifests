@@ -7,8 +7,8 @@
   <remote name="pavayu"
           fetch="https://github.com/orgs/pa-vayu" />
   
-  <remote name="xcode"
-          fetch="https://github.com/XCode219" />
+  <remote name="azurehelper"
+          fetch="https://github.com/AzureHelper" />
 
   <remote name="extrasas"
           fetch="https://github.com/ArrowOS" />
@@ -20,19 +20,20 @@
           fetch="https://github.com/LineageOS" />
 
   <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael-2" remote="azure" revision="sapphire" />
+        <project path="device/xiaomi/raphael" name="aospa_device_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
         <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azure" revision="ruby" />
         <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="azure" revision="ruby" />
 
   <!-- Extra -->
        <!-- remove-project name="android_vendor_aospa" / -->
-       <project path="vendor/aospa" name="android_vendor_aospa" remote="xcode" revision="sapphire" />
+       <!-- project path="vendor/aospa" name="android_vendor_aospa" remote="xcode" revision="sapphire" />
        <!-- remove-project name="android_art" / -->
        <!-- project path="art" name="android_art" remote="pavayu" revision="sapphire" / -->
        <!-- remove-project name="android_bionic" / -->
        <!-- project path="bionic" name="android_bionic" remote="pavayu" revision="sapphire" / -->
-       <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azure" revision="sapphire" />
-       <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-18.1" />
+       <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azurehelper" revision="sapphire" />
+       <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
+
   <!-- HALs Replacement -->	
   
 </manifest>
