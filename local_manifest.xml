@@ -25,12 +25,6 @@
         <project path="kernel/xiaomi/raphael" name="kernel_xiaomi_raphael" remote="azure" revision="ruby" />
 
   <!-- Extra -->
-       <!-- remove-project name="android_vendor_aospa" / -->
-       <!-- project path="vendor/aospa" name="android_vendor_aospa" remote="xcode" revision="sapphire" />
-       <!-- remove-project name="android_art" / -->
-       <!-- project path="art" name="android_art" remote="pavayu" revision="sapphire" / -->
-       <!-- remove-project name="android_bionic" / -->
-       <!-- project path="bionic" name="android_bionic" remote="pavayu" revision="sapphire" / -->
        <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azurehelper" revision="sapphire" />
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
 
