@@ -30,5 +30,5 @@
      
   <!-- HALs Replacement -->
        <remove-project name="android_hardware_qcom_wlan"/>	
-       <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="extrasls" revision="lineage-19.1-caf" />
+       <project path="vendor/qcom/opensource/wlan" name="android_hardware_qcom_wlan" remote="extrasls" revision="lineage-19.1-caf" />
 </manifest>
