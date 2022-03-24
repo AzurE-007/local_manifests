@@ -27,7 +27,8 @@
   <!-- Extra -->
        <project path="device/xiaomi/raphael-sepolicy" name="android_device_xiaomi_raphael-sepolicy" remote="azurehelper" revision="sapphire" />
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
-
-  <!-- HALs Replacement -->	
-  
+     
+  <!-- HALs Replacement -->
+       <remove-project name="android_hardware_qcom_wlan"/>	
+       <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="extrasls" revision="lineage-19.1-caf" />
 </manifest>
