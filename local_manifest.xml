@@ -19,6 +19,9 @@
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
 
+  <remote name="quicla"
+          fetch="https://gitlab.com/quicla" />
+
   <!-- Trees -->
         <project path="device/xiaomi/raphael" name="aospa_device_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
         <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azure" revision="ruby" />
@@ -29,6 +32,6 @@
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
      
   <!-- HALs Replacement -->
-       <remove-project name="android_hardware_qcom_wlan"/>	
-       <project path="vendor/qcom/opensource/wlan" name="android_hardware_qcom_wlan" remote="extrasls" revision="lineage-19.1-caf" />
+       <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut"/>	
+       <project path="vendor/qcom/opensource/wlan" name="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="quicla" revision="LA.UM.9.12.r1-14000-SMxx50.QSSI13.0" />
 </manifest>
