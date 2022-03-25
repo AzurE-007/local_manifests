@@ -33,5 +33,5 @@
      
   <!-- HALs Replacement -->
        <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut"/>	
-       <project path="vendor/qcom/opensource/wlan" name="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="quicla" revision="LA.UM.9.12.r1-14000-SMxx50.QSSI13.0" />
+       <project path="vendor/qcom/opensource/wlan/utils/sigma-dut" name="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="quicla" revision="LA.UM.9.12.r1-14000-SMxx50.QSSI13.0" />
 </manifest>
