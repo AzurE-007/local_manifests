@@ -33,5 +33,5 @@
      
   <!-- HALs Replacement -->
        <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut"/>	
-
+       <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci"/>
 </manifest>
