@@ -18,9 +18,10 @@
   
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
+  
+   <remote name="Alone0316" 
+           fetch="https://github.com/Alone0316" />
 
-  <remote name="quicla"
-          fetch="https://gitlab.com/quicla" />
 
   <!-- Trees -->
         <project path="device/xiaomi/raphael" name="aospa_device_xiaomi_raphael" remote="azurehelper" revision="sapphire" />
@@ -32,6 +33,8 @@
        <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
        <remove-project name="AOSPA/android_vendor_aospa"/>
        <project path="vendor/aospa" name="android_vendor_aospa" remote="azure" revision="sapphire" />
+       <remove-project name="AOSPA/android_device_qcom_common" />
+       <project path="device/qcom/common" name="android_device_qcom_common" remote="Alone0316" revision="sapphire" />
      
   <!-- HALs Replacement -->
        <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut"/>	
