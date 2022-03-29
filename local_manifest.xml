@@ -2,24 +2,30 @@
 <manifest>
   <remote name="azure"
           fetch="https://github.com/AzurE-007" />
-  <remote name="xcode"
-          fetch="https://github.com/XCode219" />
+  <remote name="azurehelper"
+          fetch="https://github.com/AzureHelper" />
   <remote name="extrasas"
           fetch="https://github.com/ArrowOS" />
   <remote name="extrasad"
           fetch="https://github.com/ArrowOS-Devices" />
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
-  <remote name="extrasex"
-          fetch="https://github.com/Evolution-X" />
+  <remote name="clang"
+          fetch="https://gitlab.com/Panchajanya1999" />
+  <remote name="kernel"
+          fetch="https://github.com/LuanHalaiko" />
+  
   <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="xcode" revision="xdroid-12.x" />
-        <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="xcode" revision="twelve" />
-        <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="xcode" revision="twelve" />
+        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="azurehelper" revision="pixys-12.x" />
+        <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="azurehelper" revision="twelve" />
+        <project path="kernel/xiaomi/raphael" name="kernel_raphael_sm8150" remote="kernel" revision="raphael-unified" />
+  
   <!-- Extra -->
         <project path="device/xiaomi/extras" name="android_device_xiaomi_extras" remote="extrasad" revision="arrow-12.0" />
         <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="extrasad" revision="arrow-12.0" />
-        <remove-project name="android_packages_resources_devicesettings"/>
         <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="extrasls" revision="lineage-19.1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-azure" name="android_packages_resources_devicesettings" remote="extrasls" revision="main" />
+  
   <!-- HALs Replacement -->
+  
 </manifest>
