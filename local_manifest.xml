@@ -28,6 +28,6 @@
         <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="extrasls" revision="lineage-19.1" />
 
   <!-- HALs Replacement -->
-        <remove-project name="hardware/qcom-caf/sm8150/audio" />
+        <remove-project name="android_hardware_qcom_audio" />
         <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="extrasls" revision="lineage-19.1" />
 </manifest>
