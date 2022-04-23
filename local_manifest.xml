@@ -3,7 +3,7 @@
   <remote name="azure"
           fetch="https://github.com/AzurE-007" />
   <remote name="azurehelper"
-          fetch="https://github.com/AzureHelper" />
+          fetch="https://github.com/Azure-Helper" />
   <remote name="extrasas"
           fetch="https://github.com/ArrowOS" />
   <remote name="extrasad"
