@@ -8,7 +8,7 @@
           fetch="https://github.com/Alchemist-xD" />" />
   
   <remote name="azurehelper"
-          fetch="https://github.com/AzureHelper" />
+          fetch="https://github.com/Azure-Helper" />
 
   <remote name="extrasas"
           fetch="https://github.com/ArrowOS" />
