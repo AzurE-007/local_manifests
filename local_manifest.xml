@@ -14,7 +14,7 @@
           fetch="https://github.com/ArrowOS-Devices" />
 
   <!-- Trees -->
-        <project name="sign_test" path="device/xiaomi/raphael" remote="azurehelper" revision="test" />
+        <project name="sign_test" path="device/xiaomi/raphael" remote="name="azure" revision="test" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azurehelper" revision="test-staging-patch4" />
         <project name="kernel_xiaomi_raphael" path="kernel/msm-4.14" remote="azurehelper" revision="raphael" />
   
