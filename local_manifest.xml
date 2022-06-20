@@ -31,7 +31,6 @@
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="extrasls" revision="lineage-17.0" />
 
-        <remove-project name="platform/external/f2fs-tools" />
         <project name="android_external_f2fs-tools" path="external/f2fs-tools" remote="azure" revision="sapphire" />
 
 </manifest>
