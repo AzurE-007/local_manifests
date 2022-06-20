@@ -14,8 +14,8 @@
           fetch="https://github.com/ArrowOS-Devices" />
 
   <!-- Trees -->
-        <project name="signtest" path="device/xiaomi/raphael" remote="azure" revision="test" />
-        <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azurehelper" revision="test-staging-patch4" />
+        <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="test-staging-patch8" />
+        <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azurehelper" revision="test-staging-patch6" />
         <project name="kernel_xiaomi_raphael" path="kernel/msm-4.14" remote="azurehelper" revision="raphael" />
   
   <!-- HAL's -->
@@ -30,5 +30,8 @@
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project name="android_hardware_qcom_fm" path="hardware/qcom/fm" remote="extrasls" revision="lineage-17.0" />
+
+        <remove-project name="external/f2fs-tools" />
+        <project name="android_external_f2fs-tools" path="external/f2fs-tools" remote="azure" revision="sapphire" />
 
 </manifest>
