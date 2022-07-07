@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="azure"
-          fetch="https://github.com/AzurE-007" />
+  <remote name="bug"
+          fetch="https://github.com/back-up-git" />
 
   <remote name="azurehelper"
           fetch="https://github.com/Azure-Helper" />
@@ -14,9 +14,9 @@
           fetch="https://github.com/ArrowOS-Devices" />
 
   <!-- Trees -->
-        <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azurehelper" revision="test-staging-patch8" />
-        <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azurehelper" revision="test-staging-patch6" />
-        <project name="kernel_xiaomi_raphael" path="kernel/msm-4.14" remote="azurehelper" revision="raphael" />
+        <project name="device_xiaomi_raphael" path="device/xiaomi/raphael" remote="bug" revision="test-staging" />
+        <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="bug" revision="test-staging" />
+        <project name="kernel_xiaomi_raphael" path="kernel/msm-4.14" remote="bug" revision="test-staging" />
   
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="sapphire-855"/>    	
@@ -30,8 +30,4 @@
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
-        
-        <remove-project name="AOSPA/android_external_f2fs-tools" />
-        <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="azure" revision="sapphire-staging" />
-
 </manifest>
