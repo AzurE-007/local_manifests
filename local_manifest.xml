@@ -2,8 +2,7 @@
 <manifest>
   
   <remote name="par"
-          fetch="https://github.com/paranoid-rapahel"
-          revision="sapphire-ext" />
+          fetch="https://github.com/paranoid-rapahel" />
 
   <remote name="bug"
           fetch="https://github.com/back-up-git" />
@@ -30,13 +29,7 @@
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="sapphire" />
 
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
- 
-        <remove-project name="AOSPA/android_frameworks_base" />
-	<project path="frameworks/base" name="android_frameworks_base" remote="par" />
-
-        <remove-project name="AOSPA/android_packages_apps_Settings" />
-        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="par" />
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="test-staging" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
         
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
