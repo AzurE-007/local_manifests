@@ -2,7 +2,7 @@
 <manifest>
   
   <remote name="par"
-          fetch="https://github.com/paranoid-rapahel" />
+          fetch="https://github.com/paranoid-raphael" />
 
   <remote name="bug"
           fetch="https://github.com/back-up-git" />
