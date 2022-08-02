@@ -42,7 +42,7 @@
         <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="par" revision="sapphire" />
              
         <remove-project name="AOSPA/android_frameworks_av" />
-        <project path="frameworks/base" name="android_frameworks_av" remote="rdxzv" revision="sapphire" />
+        <project path="frameworks/av" name="android_frameworks_av" remote="rdxzv" revision="sapphire" />
 
         <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="rdxzv" revision="sapphire" />
 
