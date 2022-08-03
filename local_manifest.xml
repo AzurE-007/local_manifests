@@ -44,7 +44,7 @@
         <remove-project name="AOSPA/android_frameworks_av" />
         <project path="frameworks/av" name="android_frameworks_av" remote="rdxzv" revision="sapphire" />
 
-        <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="rdxzv" revision="sapphire" />
+        <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="par" revision="sapphire" />
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
