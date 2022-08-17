@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="azure"
-          fetch="https://github.com/AzurE-007" />
-  <remote name="azurehelper"
-          fetch="https://github.com/Azure-Helper" />
-  <remote name="extrasas"
-          fetch="https://github.com/ArrowOS" />
-  <remote name="extrasad"
+  <remote name="asd"
           fetch="https://github.com/ArrowOS-Devices" />
-  <remote name="extrasls"
-          fetch="https://github.com/LineageOS" />
-  
+ 
   <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="azurehelper" revision="wip" />
-        <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azurehelper" revision="wip" />
-        <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="extrasad" revision="arrow-12.1" />
+        <project path="device/xiaomi/raphael" name="android_device_xiaomi_raphael" remote="asd" revision="arrow-13.0" />
+        <project path="vendor/xiaomi/raphael" name="android_vendor_xiaomi_raphael" remote="asd" revision="arrow-13.0" />
+        <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="asd" revision="arrow-13.0" />
   <!-- Extra -->
-        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="extrasls" revision="lineage-19.1" />
-  <!-- HALs Replacement -->
+        <project path="packages/apps/GCamGOPrebuilt" name="android_packages_apps_GCamGOPrebuilt" remote="asd" revision="arrow-12.0" />
+
 </manifest>
