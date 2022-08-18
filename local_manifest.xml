@@ -26,7 +26,7 @@
 	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="sapphire-855"/>
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="sapphire-855"/>
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-855"/>
-        <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="sapphire" />
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="par" revision="sapphire" />
 
   <!-- Fork's -->
         <remove-project name="AOSPA/android_vendor_aospa" />
