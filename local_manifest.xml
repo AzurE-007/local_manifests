@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="azurehelper"
-          fetch="https://github.com/Azure-Helper" />
 
-  <remote name="azuretest"
-          fetch="https://github.com/AzurE-007" />
-
-  <remote name="wadiehabib"
-          fetch="https://github.com/wadiehabib" />
+  <remote name="bug"
+          fetch="https://github.com/back-up-git" />
   
   <remote name="extrasls"
           fetch="https://github.com/LineageOS" />
@@ -18,15 +13,12 @@
 
 
   <!-- Trees -->
-        <project name="signtest" path="device/xiaomi/raphael" remote="azuretest" revision="test" />
-        <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="azuretest" revision="test" />
-        <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="wadiehabib" revision="snaplight" />
+        <project name="device_xiaomu_raphael" path="device/xiaomi/raphael" remote="bug" revision="ricedroid" />
+        <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="bug" revision="ricedroid" />
+        <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="bug" revision="ricedroid" />
 
   <!-- Clang -->
         <project name="proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" remote="clang" revision="master" />
-
-  <!-- Device Settings -->
-       <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="extrasls" revision="lineage-19.1" />
 
   <!-- Hardware Trees -->
        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="extrasls" revision="lineage-19.1" />
