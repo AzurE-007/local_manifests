@@ -5,8 +5,8 @@
   <remote name="bug"
           fetch="https://github.com/back-up-git" />
   
-  <remote name="los"
-          fetch="https://github.com/LineageOS" />
+  <remote name="pos"
+          fetch="https://github.com/PixysOS-Devices" />
 
   <remote name="aod"
                 fetch="https://github.com/ArrowOS-Devices" />
@@ -29,6 +29,6 @@
         <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="aop" revision="master" />
 
   <!-- Hardware Trees -->
-       <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="los" revision="lineage-19.1" />
+       <project name="hardware_xiaomi" path="hardware/xiaomi" remote="pos" revision="twelve" />
 	
 </manifest>
