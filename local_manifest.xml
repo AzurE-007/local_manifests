@@ -7,6 +7,9 @@
   <remote name="bug"
           fetch="https://github.com/back-up-git" />
 
+  <remote name="extrasls"
+          fetch="https://github.com/LineageOS" />
+
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="sapphire-855"/>    	
 	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="sapphire-855"/>
