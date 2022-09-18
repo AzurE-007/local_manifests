@@ -11,14 +11,14 @@
           fetch="https://github.com/LineageOS" />
 
   <!-- HAL's -->
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="sapphire-855"/>    	
-	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="sapphire-855"/>
-        <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="sapphire-855"/>
-        <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="sapphire-855"/>
-        <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="sapphire" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855"/>    	
+	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="topaz-855"/>
+        <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855"/>
+        <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855"/>
+        <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
 
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="sapphire" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
