@@ -28,9 +28,4 @@
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
-        
-        <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" remote="extrasas" revision="arrow-13.0" />
-        <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" clone-depth="1" remote="extrasas" revision="arrow-13.0" />
-        
-        <project path="prebuilts/clang-standalone" name="android_prebuilts_clang-standalone" clone-depth="1" remote="tkymo" revision="11" />
 </manifest>
