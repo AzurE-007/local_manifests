@@ -28,4 +28,6 @@
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
+         
+        <project path="prebuilts/clang-standalone" name="android_prebuilts_clang-standalone" clone-depth="1" remote="tkymo" revision="15" />
 </manifest>
