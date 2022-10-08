@@ -24,7 +24,7 @@
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
 
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-ci" > <linkfile src="build.sh" dest="rom-build.sh" /> </project>
 
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="extrasls" revision="lineage-17.0" />
