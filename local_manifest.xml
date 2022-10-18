@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="azure"
-          fetch="https://github.com/AzurE-007" />
-  <remote name="azurehelper"
+
+    <!-- Remotes -->
+	<remote name="azure"
           fetch="https://github.com/Azure-Helper" />
-  <remote name="extrasas"
-          fetch="https://github.com/ArrowOS" />
-  <remote name="extrasad"
-          fetch="https://github.com/ArrowOS-Devices" />
-  <remote name="extrasls"
-          fetch="https://github.com/LineageOS" />
-  
-  <!-- Trees -->
-        <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="azurehelper" revision="wip" />
-        <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="azurehelper" revision="wip" />
-        <project path="kernel/xiaomi/raphael" name="android_kernel_xiaomi_raphael" remote="extrasad" revision="arrow-12.1" />
-  <!-- Extra -->
-        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="extrasls" revision="lineage-19.1" />
-  <!-- HALs Replacement -->
+
+        <remote name="sm8150"
+          fetch="https://github.com/xiaomi-sm8150-devs" />
+       
+        <remote name="muppets"
+           fetch="https://gitlab.com/the-muppets" />
+       
+        <remote name="lineage"
+           fetch="https://github.com/LineageOS" />
+
+        <remote name="aod"
+           fetch="https://github.com/ArrowOS-Devices" />
+
+        <remote name="aop"
+           fetch="https://gitlab.com/arrowos-project" />
+
+    
+    <!-- Common Tree -->
+	<project name="android_device_xiaomi_sm8150-common" path="device/xiaomi/sm8150-common" remote="sm8150" revision="lineage-19.1" />
+	
+    <!-- Device Tree -->
+	<project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="azure" revision="lineage-19.1" />
+	
+    <!-- Kernel Source -->
+	<project name="android_kernel_xiaomi_sm8150-legacy" path="kernel/xiaomi/sm8150-legacy" remote="sm8150" revision="lineage-19.1" />
+
+    <!-- Proprietary Blobs -->
+	<project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="muppets" revision="lineage-19.1" />
+	
+    <!-- Hardware Trees -->
+        <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineage" revision="lineage-19.1" />
+
+    <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="aod" revision="arrow-11.0" />
+        <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="aop" revision="master" />
+
 </manifest>
