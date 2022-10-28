@@ -7,7 +7,7 @@
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855"/>    	
 	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="topaz-855"/>
-        <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="par" revision="topaz"/>
+        <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="aospa" revision="topaz-855"/>
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855"/>
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
 
@@ -15,16 +15,6 @@
         <remove-project name="AOSPA/android_vendor_aospa" />
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz" >
           <linkfile src="build.sh" dest="rom-build.sh" />
-        </project> 
-        
-        <remove-project name="AOSPA/android_build" />
-        <project path="build/make" name="android_build" remote="par" revision="topaz" >
-          <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-          <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-          <linkfile src="core" dest="build/core" />
-          <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-          <linkfile src="target" dest="build/target" />
-          <linkfile src="tools" dest="build/tools" />
         </project>
 
         <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
