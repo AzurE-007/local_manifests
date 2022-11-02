@@ -15,7 +15,7 @@
   <!-- Trees -->
         <project name="T" path="device/xiaomi/raphael" remote="azr" revision="tm" />
         <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="pos" revision="twelve" />
-        <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="bug" revision="topaz" />
+        <project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="bug" revision="statix" />
 
   <!-- Hardware Trees -->
        <project name="hardware_xiaomi" path="hardware/xiaomi" remote="pos" revision="twelve" />
