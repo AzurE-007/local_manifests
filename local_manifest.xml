@@ -17,7 +17,7 @@
 
   <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz">
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-ci">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
 
