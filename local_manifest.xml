@@ -36,6 +36,6 @@
         <remove-project name="AOSPA/android_packages_services_Telecomm" />
         <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="par" revision="topaz"/>
 
-        <remove-project name="AOSPA/android_packages_providers_TelephonyProvider" />
-        <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="par" revision="topaz"/>
+        <remove-project name="AOSPA/android_frameworks_opt_telephony" />
+        <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="par" revision="topaz"/>
 </manifest>
