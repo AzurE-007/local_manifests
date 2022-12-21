@@ -6,6 +6,7 @@
 
         <remove-project name="platform/prebuilts/sdk" />
         <remove-project name="platform/prebuilts/tools" />
+        <remove-project name="AOSPA/android_system_media" />
 
   <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855"/>    	
