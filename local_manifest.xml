@@ -13,6 +13,4 @@
   <!-- Hardware Trees -->
        <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="tm" />
 
-  <!-- Device Settings -->
-       <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="stx" revision="tm" />	
 </manifest>
