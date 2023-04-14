@@ -11,6 +11,6 @@
         <project name="proprietary_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="sm8150" revision="lineage-20" />
         
   <!-- Hardware Trees -->
-       <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="par" />
+        <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="par" />
 
 </manifest>
