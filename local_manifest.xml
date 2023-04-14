@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="bug"
-          fetch="https://github.com/back-up-git" />
-  
-  <remote name="pos"
-          fetch="https://github.com/PixysOS-Devices" />
+  <remote name="sm8150"
+          fetch="https://github.com/xiaomi-sm8150-devs" />
 
-  <remote name="azr"
-                fetch="https://github.com/Azure-Helper" />
-
-  <remote name="los"
-                fetch="https://github.com/LineageOS" />
+  <remote name="statix"
+                fetch="https://github.com/StatiXOS" />
 
   <!-- Trees -->
-        <project name="T" path="device/xiaomi/raphael" remote="azr" revision="tm" />
-        <project name="V" path="vendor/xiaomi/raphael" remote="azr" revision="tm" />
+        <project name="proprietary_vendor_xiaomi_sm8150-common" path="vendor/xiaomi/sm8150-common" remote="sm8150" revision="lineage-20" />
+        <project name="proprietary_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="sm8150" revision="lineage-20" />
         
   <!-- Hardware Trees -->
-       <project name="P-404/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="tokui" />
+       <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="statix" revision="tm" />
 
   <!-- Device Settings -->
-       <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="los" revision="lineage-19.1" />	
+       <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="statix" revision="tm" />	
 </manifest>
