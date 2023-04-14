@@ -3,14 +3,14 @@
   <remote name="sm8150"
           fetch="https://github.com/xiaomi-sm8150-devs" />
 
-  <remote name="stx"
-                fetch="https://github.com/StatiXOS" />
+  <remote name="par"
+          fetch="https://github.com/paranoid-raphael" />
 
   <!-- Trees -->
         <project name="proprietary_vendor_xiaomi_sm8150-common" path="vendor/xiaomi/sm8150-common" remote="sm8150" revision="lineage-20" />
         <project name="proprietary_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="sm8150" revision="lineage-20" />
         
   <!-- Hardware Trees -->
-       <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="tm" />
+       <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="par" />
 
 </manifest>
