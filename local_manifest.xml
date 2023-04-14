@@ -6,6 +6,9 @@
   <remote name="par"
           fetch="https://github.com/paranoid-raphael" />
 
+  <remote name="stx"
+          fetch="https://github.com/StatiXOS" />
+
   <!-- Trees -->
         <project name="proprietary_vendor_xiaomi_sm8150-common" path="vendor/xiaomi/sm8150-common" remote="sm8150" revision="lineage-20" />
         <project name="proprietary_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="sm8150" revision="lineage-20" />
@@ -20,4 +23,8 @@
           <linkfile src="msm-5.4" dest="hardware/qcom-caf/sm8350/kernel-headers" />
           <linkfile src="msm-5.10" dest="hardware/qcom-caf/sm8450/kernel-headers" />
         </project>
+
+  <!-- Hardware Trees -->
+        <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="tm" />
+
 </manifest>
