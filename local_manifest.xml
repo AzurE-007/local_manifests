@@ -9,8 +9,15 @@
   <!-- Trees -->
         <project name="proprietary_vendor_xiaomi_sm8150-common" path="vendor/xiaomi/sm8150-common" remote="sm8150" revision="lineage-20" />
         <project name="proprietary_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="sm8150" revision="lineage-20" />
-        
-  <!-- Hardware Trees -->
-        <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="par" revision="tm" />
 
+  <!-- Kernel Headers -->
+        <remove-project name="android_hardware_qcom-caf_kernel-headers" />
+        <project path="hardware/qcom-caf/kernel-headers" name="android_hardware_qcom-caf_kernel-headers" remote="par" revision="tm-caf">
+          <!-- Add guards for CAF repositories. -->
+          <linkfile src="msm-4.4" dest="hardware/qcom-caf/msm8998/kernel-headers" />
+          <linkfile src="msm-4.14" dest="hardware/qcom-caf/sm8150/kernel-headers" />
+          <linkfile src="msm-4.19" dest="hardware/qcom-caf/sm8250/kernel-headers" />
+          <linkfile src="msm-5.4" dest="hardware/qcom-caf/sm8350/kernel-headers" />
+          <linkfile src="msm-5.10" dest="hardware/qcom-caf/sm8450/kernel-headers" />
+        </project>
 </manifest>
