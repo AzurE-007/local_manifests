@@ -3,7 +3,7 @@
   <remote name="sm8150"
           fetch="https://github.com/xiaomi-sm8150-devs" />
 
-  <remote name="statix"
+  <remote name="stx"
                 fetch="https://github.com/StatiXOS" />
 
   <!-- Trees -->
@@ -11,8 +11,8 @@
         <project name="proprietary_vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="sm8150" revision="lineage-20" />
         
   <!-- Hardware Trees -->
-       <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="statix" revision="tm" />
+       <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="tm" />
 
   <!-- Device Settings -->
-       <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="statix" revision="tm" />	
+       <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="stx" revision="tm" />	
 </manifest>
