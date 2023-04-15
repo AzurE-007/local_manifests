@@ -23,6 +23,10 @@
           <linkfile src="msm-5.4" dest="hardware/qcom-caf/sm8350/kernel-headers" />
           <linkfile src="msm-5.10" dest="hardware/qcom-caf/sm8450/kernel-headers" />
         </project>
+  
+  <!-- HAL's -->
+        <remove-project name="android_hardware_qcom_display" />
+        <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="par" revision="tm-caf-sm8150" />
 
   <!-- Hardware Trees -->
         <project name="android_vendor_hardware_xiaomi" path="vendor/hardware/xiaomi" remote="stx" revision="tm" />
