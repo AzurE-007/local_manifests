@@ -4,55 +4,45 @@
   <remote name="par"
           fetch="https://github.com/paranoid-raphael" />
 
-  <remote name="pag"
-          fetch="https://github.com/pa-gr" />
+  <remote name="los"
+          fetch="https://github.com/LineageOS" />
 
-  <!-- HAL's -->
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855"/>    	
-	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="topaz-855"/>
-        <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855"/>
-        <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855"/>
+  <remote name="sm8150"
+          fetch="https://github.com/xiaomi-sm8150-devs/" />
+
+        <project path="vendor/xiaomi/raphael" name="proprietary_vendor_xiaomi_raphael" remote="sm8150" revision="lineage-20" />
+
+<!-- HAL's -->
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855" />    	
+	<project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="topaz-855" />
+        <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855" />
+        <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855" />
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
         <project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="aospa" revision="topaz-SN100X-legacy">
-          <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+          <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk" />
         </project>
-        <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy"/>
+        <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy">
 
   <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-gr">
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-ci">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
-     
-        <remove-project name="AOSPA/android_device_qcom_common" />
-        <project path="device/qcom/common" name="android_device_qcom_common" remote="par" revision="topaz">
-          <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+        <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+        <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0" />
+        <remove-project name="AOSPA/android_hardware_lineage_compat" />
+        <remove-project name="AOSPA/android_build" />
+        <project path="build/make" name="android_build" remote="par" revision="topaz">
+          <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+          <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+          <linkfile src="core" dest="build/core" />
+          <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+          <linkfile src="target" dest="build/target" />
+          <linkfile src="tools" dest="build/tools" />
         </project>
+        <!-- remove-project name="AOSPA/android_frameworks_base" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="topaz" />
+        <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
+        <project path="packages/apps/Paranoid/SystemUI" name="android_packages_apps_Paranoid_SystemUI" remote="par" revision="topaz" /-->
 
-        <remove-project name="AOSPA/android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="pag" revision="topaz"/>
-
-        <remove-project name="AOSPA/android_frameworks_native" />
-        <project path="frameworks/native" name="android_frameworks_native" remote="pag" revision="topaz"/>
-    
-        <remove-project name="AOSPA/android_packages_apps_Settings" />
-        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pag" revision="topaz"/>
-        
-        <remove-project name="proprietary_vendor_qcom_common" />
-        <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="pag" revision="topaz"/>
-        
-        <remove-project name="platform/packages/services/Telecomm" />
-        <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="pag" revision="topaz"/>
-        
-        <remove-project name="AOSPA/android_packages_apps_Launcher3" />
-        <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="pag" revision="topaz"/>
-        
-        <remove-project name="platform/packages/modules/Permission" />
-        <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="pag" revision="topaz" />
-
-        <remove-project name="platform/packages/apps/CarrierConfig" />
-        <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" remote="pag" revision="topaz" />        
-     
-        <remove-project name="AOSPA/android_packages_apps_ParanoidHub" />
-        <project path="packages/apps/ParanoidHub" name="android_packages_apps_ParanoidHub" remote="par" revision="main" />            
 </manifest>
