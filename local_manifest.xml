@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <remote name="par"
           fetch="https://github.com/paranoid-raphael" />
 
   <remote name="los"
           fetch="https://github.com/LineageOS" />
-
-  <remote name="sm8150"
-          fetch="https://github.com/xiaomi-sm8150-devs" />
-
-        <project path="vendor/xiaomi/raphael" name="proprietary_vendor_xiaomi_raphael" remote="sm8150" revision="lineage-20" />
 
 <!-- HAL's -->
         <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="topaz-855" />    	
@@ -17,10 +13,10 @@
         <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="topaz-855" />
         <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="topaz-855" />
         <project path="hardware/xiaomi" name="AOSPA/android_hardware_xiaomi" remote="aospa" revision="topaz" />
-        <project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="aospa" revision="topaz-SN100X-legacy">
+        <!-- project path="vendor/nxp/opensource/halimpl" name="AOSPA/android_vendor_nxp_opensource_halimpl" remote="aospa" revision="topaz-SN100X-legacy">
           <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk" />
         </project>
-        <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy">
+        <project path="vendor/nxp/opensource/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="par" revision="topaz-SN100X-legacy" /-->
 
   <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
@@ -39,4 +35,8 @@
           <linkfile src="target" dest="build/target" />
           <linkfile src="tools" dest="build/tools" />
         </project>
+        <!-- remove-project name="AOSPA/android_frameworks_base" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="topaz" />
+        <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
+        <project path="packages/apps/Paranoid/SystemUI" name="android_packages_apps_Paranoid_SystemUI" remote="par" revision="topaz" /-->
 </manifest>
