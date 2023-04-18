@@ -7,7 +7,7 @@
           fetch="https://github.com/LineageOS" />
 
   <remote name="sm8150"
-          fetch="https://github.com/xiaomi-sm8150-devs/" />
+          fetch="https://github.com/xiaomi-sm8150-devs" />
 
         <project path="vendor/xiaomi/raphael" name="proprietary_vendor_xiaomi_raphael" remote="sm8150" revision="lineage-20" />
 
