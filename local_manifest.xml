@@ -35,6 +35,11 @@
           <linkfile src="target" dest="build/target" />
           <linkfile src="tools" dest="build/tools" />
         </project>
+        <remove-project name="AOSPA/android_build_soong" />
+        <project path="build/soong" name="android_build_soong" remote="par" revision="topaz">
+          <linkfile src="root.bp" dest="Android.bp" />
+          <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+        </project>
         <!-- remove-project name="AOSPA/android_frameworks_base" />
         <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="topaz" />
         <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
