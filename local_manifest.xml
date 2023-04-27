@@ -33,7 +33,7 @@
 
   <!-- Forks -->
         <remove-project name="AOSPA/android_vendor_aospa" />
-	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-ci">
+	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-test">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
