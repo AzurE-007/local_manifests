@@ -13,7 +13,7 @@
   <remote name="smd"
           fetch="https://github.com/xiaomi-sm8150-devs" />
 
-<!-- Tree -->
+<!-- Trees -->
         <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="xcd" revision="topaz" />    	
 	<project path="device/xiaomi/sm8150-common" name="hardware_qcom-caf_sm8150" remote="xcd" revision="topaz" />
         <project path="vendor/xiaomi/sm8150-common" name="vendor_xiaomi_raphael" remote="xcd" revision="topaz" />
@@ -36,6 +36,7 @@
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="topaz-test">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
+	<project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
         <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0" />
         <remove-project name="AOSPA/android_hardware_lineage_compat" />
