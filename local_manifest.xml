@@ -13,9 +13,6 @@
   <remote name="smd"
           fetch="https://github.com/xiaomi-sm8150-devs" />
 	
-   <remote name="mic"
-          fetch="https://gitlab.com/ItzDFPlayer" />
-	
 <!-- Trees -->
         <project path="device/xiaomi/raphael" name="device_xiaomi_raphael" remote="xcd" revision="topaz" />
         <project path="vendor/xiaomi/raphael" name="vendor_xiaomi_raphael" remote="xcd" revision="topaz" />
@@ -60,6 +57,5 @@
         <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="topaz" />
         <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
         <project path="packages/apps/Paranoid/SystemUI" name="android_packages_apps_Paranoid_SystemUI" remote="par" revision="topaz" /-->     
-        <project path="vendor/xiaomi/miuicamera" name="vendor_davinci-miuicamera" remote="mic" revision="leica+miui-raphael" />
-
+        
 </manifest>
