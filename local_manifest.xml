@@ -37,8 +37,8 @@
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
 	<project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
-        <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
-        <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0" />
+        <!-- remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+        <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0" /-->
         <remove-project name="AOSPA/android_build" />
         <project path="build/make" name="android_build" remote="par" revision="topaz">
           <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
