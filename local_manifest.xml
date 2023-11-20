@@ -33,7 +33,7 @@
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="par" revision="uvite-ci">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
-	<project path="prebuilts/clang/host/linux-x86/clang-r498229" name="ThankYouMario/android_prebuilts_clang-standalone" remote="gitlab" revision="17"/>
+	<!-- project path="prebuilts/clang/host/linux-x86/clang-r498229" name="ThankYouMario/android_prebuilts_clang-standalone" remote="gitlab" revision="17"/-->
         <!-- remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
         <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="los" revision="lineage-17.0" /-->
         <remove-project name="AOSPA/android_build" />
